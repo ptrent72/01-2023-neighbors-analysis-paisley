@@ -1,38 +1,31 @@
-# Analysis of TK data set — MM/YYYY to MM/YYYY
-
-This repository contains data, analytic code, and findings that support portions of the article, “[TKTKTKTK](https://www.google.com),” published Month Date, Year. Please read that article, which contains important context and details, before proceeding.
+# Analysis of Neighbors Ring Alert data set — January 2021 - May 2022 
 
 ## Data
 
-This analysis uses TKTKTK spreadsheets.
+This analysis uses msg_extracts.csv spreadsheets.
 
 The spreadsheets come from the following sources:
 
 - Name of source:
-  - `name_of_spreadsheet.xlsx`: Raw data of TKTKTK
-
-Each of the spreadsheets contain, among others, the following columns relevant to the analysis:
-
-- `tktktk` — TK description
-- `tktktk` — TK description
+  - msg_extracts.csv: Raw data of Brookhaven PD Neighbors Ring alerts as .msg files.  
 
 ## Methodology
 
-The notebook [`tktktktk.ipynb`](notebooks/tktktktk.ipynb) performs the following analyses:
+The notebook data_analysis_trent.ipynb performs the following analyses:
 
-##### Part 1: TKTK
+##### Part 1: Unique number of recipients
 
-- Description of what you did with the data
+- This counts the unique number of recipients that the ring alerts were sent to. 
 
 
-##### Part 2: TKTK
+##### Part 2: Tallies over time (resampling)
 
-- Description of what you did with the data
+- This resamples the data by summarizing over time how many ring alerts were sent to each officer. 
 
 
 ## Outputs
 
-The notebooks output this spreadsheet which contains TKTK: [`output/tktktk.csv`](output/tktktk.csv).
+The notebooks output these two csv files: output/resampling_Trent.csv and output/unique_count_Trent.csv.
 
 ## Running the analysis yourself
 
@@ -47,4 +40,4 @@ All code in this repository is available under the [MIT License](https://opensou
 
 ## Feedback / Questions?
 
-Contact YOUR NAME HERE at your.name@email.com.
+Contact Paisley Trent at paisley.trent@gmail.com.
